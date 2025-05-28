@@ -1,0 +1,255 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, sans-serif;
+    max-width: max-content;
+    margin: auto;
+    padding: 20px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    background-image: url('../assets/images/background.jpg');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:focus,
+button:focus {
+    outline: 2px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+header {
+    background: #4a90e2;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    margin-top: 10px;
+    align-items: center;
+    gap: 5px;
+}
+
+nav a {
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    flex: 1;
+    justify-content: center;
+    transition: background-color 0.5s ease;
+    text-align: center;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+}
+
+.search-bar input {
+    flex: 1 1 200px;
+    min-width: 200px;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+}
+
+.search-bar button:hover {
+    background-color: #555;
+}
+
+main {
+    padding: 20px 0;
+}
+
+section {
+    background-color: rgba(255,255,255,0.7); 
+    padding: 25px; 
+    margin-bottom: 20px; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    backdrop-filter: blur(8px);
+}
+
+section h2 {
+    color: #4a90e2; 
+    margin-top: 0; 
+    margin-bottom: 20px; 
+    text-align: center; 
+    font-size: 1.8em;
+}
+
+.book-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.book-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    flex: 1 1 200px;
+    max-width: 250px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.book-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.featured {
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.featured h2 {
+    color: #4a90e2;
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.featured .book-grid {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 30px; 
+    align-items: flex-start; 
+}
+
+.featured .book-card {
+    flex: 1 1 300px; 
+    max-width: 350px; 
+    margin: 0;
+}
+
+
+.featured .reviews {
+    flex: 1 1 400px; 
+    background: transparent;
+    max-width: 700px; 
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: none;
+}
+
+.featured .reviews h3 {
+    color: #4a90e2;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.reviews blockquote {
+    background: #f9f9f9;
+    font-style: italic;
+    padding: 15px;
+    margin: 10px 0;
+    border-left: 5px solid #4a90e2;
+    border-radius: 5px; 
+    box-shadow: 0 1px 3px rgba(0,0,0,0.08); 
+}
+
+
+
+.genre-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.genre-buttons button {
+    background-color: #ffffff;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+.genre-buttons button:hover {
+    background-color: #c0c0c0;
+}
+
+
+
+.join {
+    text-align: center;
+    color: #333;
+}
+
+.join button {
+    background-color: rgb(255, 174, 0);
+    color: white;
+}
+
+.join button:hover {
+    background-color: rgb(255, 115, 0);
+}
+
+footer {
+    background: #4a90e2;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+}

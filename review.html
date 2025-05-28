@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Book Review - Submit Review</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>Submit Your Review</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="books.html">Books</a>
+      <a href="login.html">Login</a>
+      <a href="review.html">Submit Review</a>
+    </nav>
+  </header>
+
+  <main>
+    <form id="review-form">
+      <label for="book-title">Book Title:</label><br />
+      <input type="text" id="book-title" name="book-title" required /><br />
+
+      <label for="review-text">Review:</label><br />
+      <textarea id="review-text" name="review-text" rows="5" required></textarea><br />
+
+      <label for="rating">Rating:</label><br />
+      <select id="rating" name="rating" required>
+        <option value="">Select rating</option>
+        <option value="5">5 - Excellent</option>
+        <option value="4">4 - Good</option>
+        <option value="3">3 - Average</option>
+        <option value="2">2 - Poor</option>
+        <option value="1">1 - Terrible</option>
+      </select><br />
+
+      <button type="submit">Submit Review</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Book Review</p>
+  </footer>
+</body>
+</html>

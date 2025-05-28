@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Book Review - Home</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Book Review</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="login.html">Login</a>
+            <a href="review.html">Submission</a>
+        </nav>
+        <!-- Search Bar -->
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search for books..." />
+            <button>Search</button>
+        </section>
+    </header>
+    <main>
+
+        <!-- Genre -->
+        <section class="genres">
+            <h2>📚 Browse by Genre</h2>
+            <div class="genre-buttons">
+                <button>Fiction</button>
+                <button>Mystery</button>
+                <button>Fantasy</button>
+                <button>Non-Fiction</button>
+                <button>Romance</button>
+            </div>
+        </section>
+
+        <!-- Featured -->
+        <section class="featured">
+            <h2>📌 Featured Book of the day </h2>
+            <div class="book-grid">
+                <a href="book.html?id=1" class="book-card">
+                    <img src="assets/images/hp1.jpg" alt="Harry Potter Book 1" />
+                    <h3>Harry Potter and the Philosopher's Stone</h3>
+                    <p>By J.K. Rowling</p>
+                    <p>★★★★☆</p>
+                </a>
+                <!-- Comments -->
+                <section class="reviews">
+                    <h3>Praisers</h3>
+                    <blockquote>“A captivating start to a magical series that has enchanted millions.” — <strong>Khushi P.</strong></blockquote>
+                    <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” — <strong>Sathi L.</strong></blockquote>
+                    <blockquote>“J K Rowling’s phenomenal imagination has created a stimulating fantasy world with the power to excite and involve readers of all ages” — <strong>Supriyo N.</strong></blockquote>
+                    <h3>Critics</h3>
+                    <blockquote>“The pacing is slow at times, but the world is worth the wait.” — <strong>Sunita M.</strong></blockquote>
+                    <blockquote>"Several instances of Deux Ex Machina make the protagonist’s position very safe and lacking any real danger." — <strong>Sourav K.</strong></blockquote>
+                </section>
+            </div>
+        </section>
+
+        <!-- Top -->
+        <section class="top-rated">
+            <h2>⭐ Top-Rated Books</h2>
+            <div class="book-grid">
+                <a href="book.html?id=6" class="book-card">
+                    <img src="assets/images/top1.jpg" alt="The Book Thief" />
+                    <h3>The Book Thief</h3>
+                    <p>★★★★★</p>
+                </a>
+                <a href="book.html?id=7" class="book-card">
+                    <img src="assets/images/top2.jpg" alt="Brave New World" />
+                    <h3>Brave New World</h3>
+                    <p>★★★★☆</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- New -->
+        <section class="new-arrivals">
+            <h2>🆕 New Arrivals</h2>
+            <div class="book-grid">
+                <a href="book.html?id=8" class="book-card">
+                    <img src="assets/images/fourthwing.jpg" alt="Fourth Wing" />
+                    <h3>Fourth Wing</h3>
+                    <p>By Rebecca Yarros</p>
+                </a>
+                <a href="book.html?id=9" class="book-card">
+                    <img src="assets/images/yellowface.jpg" alt="Yellowface" />
+                    <h3>Yellowface</h3>
+                    <p>By R.F. Kuang</p>
+                </a>
+                <a href="book.html?id=10" class="book-card">
+                    <img src="assets/images/lessons.jpg" alt="Lessons in Chemistry" />
+                    <h3>Lessons in Chemistry</h3>
+                    <p>By Bonnie Garmus</p>
+                </a>
+            </div>
+        </section>
+
+        <!-- Upcoming  -->
+        <section class="upcoming">
+            <h2> 🗓️ Upcoming Releases</h2>
+            <section class="upcoming-books">
+                <p>Stay tuned for these exciting new releases:</p>
+            <ul>
+                <li><strong>June 15:</strong> “The Midnight Library 2” by Matt Haig</li>
+                <li><strong>July 1:</strong> “The Final Chapter” by Jane Doe</li>
+            </ul></section>
+        </section>
+    </main>
+    <footer>
+        <!--  Join  -->
+        <section class="join">
+            <h2>📝 Join Our Community</h2>
+            <p>Start reviewing books and sharing your thoughts today!</p>
+            <a href="login.html"><button>Sign In</button></a>
+        </section>
+        <p>&copy; 2025 Book Review</p>
+    </footer>
+</body>
+
+</html>
