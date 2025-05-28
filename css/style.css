@@ -55,6 +55,7 @@ nav {
     align-items: center;
     gap: 5px;
     flex-wrap: wrap;
+    overflow-x: auto;
 }
 
 nav a {
@@ -64,7 +65,9 @@ nav a {
     display: flex;
     align-items: center;
     border-radius: 5px;
-    flex: 1;
+    min-width: 0;
+    flex: 1 1 auto;
+    flex-shrink: 1;
     justify-content: center;
     transition: background-color 0.5s ease;
     text-align: center;
