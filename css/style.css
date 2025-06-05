@@ -70,12 +70,13 @@ nav a {
     flex: 1 1 auto;
     flex-shrink: 1;
     justify-content: center;
-    transition: background-color 0.5s ease;
+    transition: background-color 1s ease;
     text-align: center;
 }
 
 nav a:hover {
-    background-color: #555;
+    background-color: #666;
+    transition: background-color 1s ease;
 }
 
 .search-bar {
@@ -88,7 +89,7 @@ nav a:hover {
 
 .search-bar input {
     flex: 1 1 200px;
-    min-width: 200px;
+    min-width: 10px;
     padding: 10px;
     font-size: 1em;
     border-radius: 20px;
@@ -96,14 +97,14 @@ nav a:hover {
 }
 
 .search-bar button {
-    background-color: #333;
+    background-color: rgb(255, 174, 0);
     color: white;
     padding: 10px 15px;
     border-radius: 20px;
 }
 
 .search-bar button:hover {
-    background-color: #555;
+    background-color: rgb(255, 115, 0);
 }
 
 main {
@@ -116,7 +117,7 @@ section {
     margin-bottom: 20px; 
     border-radius: 8px; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(8px);
+    backdrop-filter: blur(5px);
 }
 
 section h2 {
@@ -235,6 +236,9 @@ section h2 {
     background-color: #c0c0c0;
 }
 
+.upcoming ul{
+   list-style: inside disc;
+}
 
 
 .join {
@@ -245,6 +249,11 @@ section h2 {
 .join button {
     background-color: rgb(255, 174, 0);
     color: white;
+    margin-top: 0.75rem;
+    font-size: small;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
 }
 
 .join button:hover {

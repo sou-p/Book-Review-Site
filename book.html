@@ -3,13 +3,14 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Book Review - Book Details</title>
+  <meta name="description" content="An in-depth review of 'Harry Potter and the Philosopher's Stone' including characters, themes, reviews, and author bio.">
+  <title>Harry Potter and the Philosopher's Stone - Review</title>
   <link rel="stylesheet" href="css/style.css" />
-  <script src="js/script.js" defer></script>
+  <link rel="stylesheet" href="css/tabs.css">
 </head>
 <body>
   <header>
-    <h1>Book Details</h1>
+    <h1>Book Review</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="books.html">Books</a>
@@ -18,11 +19,83 @@
     </nav>
   </header>
 
-  <main id="book-details">
-    <!-- Book details will be loaded here -->
+  <main>
+    <!-- Book Info -->
+    <section>
+      <h2>Harry Potter and the Philosopher's Stone</h2>
+      <div class="book-grid">
+        <article class="book-card">
+          <img src="assets/images/hp1.jpg" alt="Harry Potter Book 1" width="200" height="300" />
+          <h3>By J.K. Rowling</h3>
+          <p><strong>Genre:</strong> Fantasy</p>
+          <p><strong>Rating:</strong> ★★★★☆</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Tabbed Content -->
+    <section class="tabs" role="tablist" aria-label="Book Information Tabs">
+      <input type="radio" id="tab1" name="tab" checked>
+      <label for="tab1" class="tab-label" role="tab" aria-controls="content1" aria-selected="true">📖 Overview</label>
+      <div class="tab-content" id="content1" role="tabpanel">
+        <p><strong>Harry Potter and the Philosopher's Stone</strong> introduces us to Harry, an orphaned boy who discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry. There, he finds friendship, battles evil, and uncovers the truth about his past and the dark wizard Voldemort. It's the magical start to one of the most beloved fantasy series in literature.</p>
+      </div>
+
+      <input type="radio" id="tab2" name="tab">
+      <label for="tab2" class="tab-label" role="tab" aria-controls="content2" aria-selected="false">👥 Main Characters</label>
+      <div class="tab-content" id="content2" role="tabpanel">
+        <ul>
+          <li><strong>Harry Potter</strong> – The boy who lived, central hero of the story.</li>
+          <li><strong>Hermione Granger</strong> – Brilliant Muggle-born witch, Harry's close friend.</li>
+          <li><strong>Ron Weasley</strong> – Loyal best friend from a wizarding family.</li>
+          <li><strong>Albus Dumbledore</strong> – Wise headmaster of Hogwarts.</li>
+          <li><strong>Lord Voldemort</strong> – Dark wizard, antagonist seeking immortality.</li>
+        </ul>
+      </div>
+
+      <input type="radio" id="tab3" name="tab">
+      <label for="tab3" class="tab-label" role="tab" aria-controls="content3" aria-selected="false">🧵 Themes</label>
+      <div class="tab-content" id="content3" role="tabpanel">
+        <ul>
+          <li><strong>Friendship & Loyalty</strong> – The trio’s bond highlights the importance of trust and teamwork.</li>
+          <li><strong>Identity & Belonging</strong> – Harry's journey of self-discovery resonates with readers finding their place in the world.</li>
+          <li><strong>Good vs. Evil</strong> – The eternal battle depicted through Voldemort and the resistance led by Dumbledore and Harry.</li>
+          <li><strong>Choice & Destiny</strong> – Emphasized through Dumbledore’s assertion that our choices define us.</li>
+        </ul>
+      </div>
+
+      <input type="radio" id="tab4" name="tab">
+      <label for="tab4" class="tab-label" role="tab" aria-controls="content4" aria-selected="false">📚 Plot Summary</label>
+      <div class="tab-content" id="content4" role="tabpanel">
+        <p>After being raised by his cruel aunt and uncle, Harry discovers on his 11th birthday that he is a wizard. He attends Hogwarts, a school for magic, where he learns about his heritage and makes lifelong friends. Along the way, he uncovers a secret involving the Philosopher’s Stone and faces trials that test his bravery, wit, and moral courage.</p>
+      </div>
+
+      <input type="radio" id="tab5" name="tab">
+      <label for="tab5" class="tab-label" role="tab" aria-controls="content5" aria-selected="false">✍️ About the Author</label>
+      <div class="tab-content" id="content5" role="tabpanel">
+        <p><strong>J.K. Rowling</strong> is a British author best known for writing the Harry Potter series. Her journey from living on welfare to becoming one of the most successful authors in history is as inspiring as her stories. She has also written novels under the pseudonym Robert Galbraith.</p>
+      </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+      <h3>📣 Praisers</h3>
+      <blockquote>“A captivating start to a magical series that has enchanted millions.” — <cite>Khushi P.</cite></blockquote>
+      <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” — <cite>Sathi L.</cite></blockquote>
+      <blockquote>“J.K. Rowling’s phenomenal imagination has created a stimulating fantasy world with the power to excite and involve readers of all ages.” — <cite>Supriyo N.</cite></blockquote>
+
+      <h3>🧐 Critics</h3>
+      <blockquote>“The pacing is slow at times, but the world is worth the wait.” — <cite>Sunita M.</cite></blockquote>
+      <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” — <cite>Sourav K.</cite></blockquote>
+    </section>
   </main>
 
   <footer>
+    <section class="join">
+      <h2>📝 Join Our Community</h2>
+      <p>Start reviewing books and sharing your thoughts today!</p>
+      <a href="login.html"><button>Sign In</button></a>
+    </section>
     <p>&copy; 2025 Book Review</p>
   </footer>
 </body>
