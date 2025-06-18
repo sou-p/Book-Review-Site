@@ -6,97 +6,82 @@
   <meta name="description" content="An in-depth review of 'Harry Potter and the Philosopher's Stone' including characters, themes, reviews, and author bio.">
   <title>Harry Potter and the Philosopher's Stone - Review</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="stylesheet" href="css/tabs.css">
 </head>
 <body>
-  <header>
-    <h1>Book Review</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="login.html">Login</a>
-      <a href="review.html">Submit Review</a>
-    </nav>
-  </header>
+    <header>
+        <h1>Book Review</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="books.html">Books</a>
+            <a href="about.html">About Us</a>
+            <a href="review.html">Submit Review</a>
+        </nav>
+        <section class="search-bar">
+            <input type="text" id="search" placeholder="Search for books..." />
+            <button>Search</button>
+        </section>
+    </header>
 
-  <main>
-    <!-- Book Info -->
-    <section>
-      <h2>Harry Potter and the Philosopher's Stone</h2>
-      <div class="book-grid">
-        <article class="book-card">
-          <img src="assets/images/hp1.jpg" alt="Harry Potter Book 1" width="200" height="300" />
-          <h3>By J.K. Rowling</h3>
-          <p><strong>Genre:</strong> Fantasy</p>
-          <p><strong>Rating:</strong> ★★★★☆</p>
-        </article>
-      </div>
-    </section>
+    <main>
+        <section class="featured">
+            <h2>Harry Potter and the Philosopher's Stone</h2>
+            <div class="book-grid">
+                <a href="book.html?id=1" class="book-card">
+                    <img src="assets/images/hp1.jpg" alt="Harry Potter Book 1" />
+                    <p>By <strong>J.K. Rowling</strong></p>
+                    <p>Genre: Fantasy</p>
+                    <p aria-label="4 out of 5 stars">★★★★☆</p>
+                </a>
+                <section class="reviews">
+            <h3>📣 Praisers</h3>
+            <blockquote>“A captivating start to a magical series that has enchanted millions.” — <cite>Khushi P.</cite></blockquote>
+            <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” — <cite>Sathi L.</cite></blockquote>
 
-    <!-- Tabbed Content -->
-    <section class="tabs" role="tablist" aria-label="Book Information Tabs">
-      <input type="radio" id="tab1" name="tab" checked>
-      <label for="tab1" class="tab-label" role="tab" aria-controls="content1" aria-selected="true">📖 Overview</label>
-      <div class="tab-content" id="content1" role="tabpanel">
-        <p><strong>Harry Potter and the Philosopher's Stone</strong> introduces us to Harry, an orphaned boy who discovers he's a wizard and attends Hogwarts School of Witchcraft and Wizardry. There, he finds friendship, battles evil, and uncovers the truth about his past and the dark wizard Voldemort. It's the magical start to one of the most beloved fantasy series in literature.</p>
-      </div>
+            <h3>🧐 Critics</h3>
+            <blockquote>“The pacing is slow at times, but the world is worth the wait.” — <cite>Sunita M.</cite></blockquote>
+            <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” — <cite>Sourav K.</cite></blockquote>
+        </section>
+            </div>
+        </section>
+<section class="book-details-section">
+    <div class="book-details">
+        <h3 class="section-heading">Overview</h3>
+        <p>This enchanting first installment introduces us to <strong>Harry Potter</strong>, an orphaned boy leading a miserable life with his abusive aunt and uncle. On his eleventh birthday, he discovers he's a wizard and is invited to attend <strong>Hogwarts School of Witchcraft and Wizardry</strong>. At Hogwarts, Harry finds true <em>friendship</em> with Ron Weasley and Hermione Granger, learns about the magical world, and confronts the dark wizard <strong>Lord Voldemort</strong>, who murdered his parents. The book is a journey of self-discovery, magic, and uncovering the truth behind his mysterious past and scar.</p>
 
-      <input type="radio" id="tab2" name="tab">
-      <label for="tab2" class="tab-label" role="tab" aria-controls="content2" aria-selected="false">👥 Main Characters</label>
-      <div class="tab-content" id="content2" role="tabpanel">
+        <h3 class="section-heading">Main Characters</h3>
         <ul>
-          <li><strong>Harry Potter</strong> – The boy who lived, central hero of the story.</li>
-          <li><strong>Hermione Granger</strong> – Brilliant Muggle-born witch, Harry's close friend.</li>
-          <li><strong>Ron Weasley</strong> – Loyal best friend from a wizarding family.</li>
-          <li><strong>Albus Dumbledore</strong> – Wise headmaster of Hogwarts.</li>
-          <li><strong>Lord Voldemort</strong> – Dark wizard, antagonist seeking immortality.</li>
+            <li><strong>Harry Potter</strong> – The resilient protagonist, known as <span class="character-description">"the boy who lived," destined to confront Voldemort</span>.</li>
+            <li><strong>Hermione Granger</strong> – A brilliant and resourceful Muggle-born witch, <span class="character-description">often the brains of the trio</span>.</li>
+            <li><strong>Ron Weasley</strong> – Harry's loyal best friend, <span class="character-description">providing comic relief and unwavering support from a large wizarding family</span>.</li>
+            <li><strong>Albus Dumbledore</strong> – The enigmatic and powerful headmaster of Hogwarts, <span class="character-description">a mentor figure to Harry</span>.</li>
+            <li><strong>Lord Voldemort</strong> – The sinister dark wizard, <span class="character-description">whose fragmented soul and quest for immortality drive much of the series' conflict</span>.</li>
+            <li><strong>Rubeus Hagrid</strong> – The kind-hearted half-giant gamekeeper of Hogwarts, <span class="character-description">who introduces Harry to the wizarding world</span>.</li>
         </ul>
-      </div>
 
-      <input type="radio" id="tab3" name="tab">
-      <label for="tab3" class="tab-label" role="tab" aria-controls="content3" aria-selected="false">🧵 Themes</label>
-      <div class="tab-content" id="content3" role="tabpanel">
+        <h3 class="section-heading">Prominent Themes</h3>
         <ul>
-          <li><strong>Friendship & Loyalty</strong> – The trio’s bond highlights the importance of trust and teamwork.</li>
-          <li><strong>Identity & Belonging</strong> – Harry's journey of self-discovery resonates with readers finding their place in the world.</li>
-          <li><strong>Good vs. Evil</strong> – The eternal battle depicted through Voldemort and the resistance led by Dumbledore and Harry.</li>
-          <li><strong>Choice & Destiny</strong> – Emphasized through Dumbledore’s assertion that our choices define us.</li>
+            <li><strong>Friendship & Loyalty:</strong> <span class="theme-description">The unbreakable bond between Harry, Ron, and Hermione forms the core of the narrative.</span></li>
+            <li><strong>Good vs. Evil:</strong> <span class="theme-description">The overarching conflict between the forces of light (Hogwarts, Dumbledore) and darkness (Voldemort and his followers).</span></li>
+            <li><strong>Choice & Destiny:</strong> <span class="theme-description">Explores the idea that one's choices, not innate abilities or lineage, define who they are.</span></li>
+            <li><strong>Love & Sacrifice:</strong> <span class="theme-description">The power of a mother's love and self-sacrifice as Harry's ultimate protection.</span></li>
+            <li><strong>The Power of Knowledge:</strong> <span class="theme-description">Hermione's reliance on books and learning often proves crucial in solving mysteries.</span></li>
         </ul>
-      </div>
 
-      <input type="radio" id="tab4" name="tab">
-      <label for="tab4" class="tab-label" role="tab" aria-controls="content4" aria-selected="false">📚 Plot Summary</label>
-      <div class="tab-content" id="content4" role="tabpanel">
-        <p>After being raised by his cruel aunt and uncle, Harry discovers on his 11th birthday that he is a wizard. He attends Hogwarts, a school for magic, where he learns about his heritage and makes lifelong friends. Along the way, he uncovers a secret involving the Philosopher’s Stone and faces trials that test his bravery, wit, and moral courage.</p>
-      </div>
+        <h3 class="section-heading">Plot Summary</h3>
+        <p>Harry's ordinary, miserable life with the Dursleys takes an extraordinary turn when letters from Hogwarts begin to arrive. Despite his aunt and uncle's attempts to hide his magical heritage, Harry is swept into a world of <em>wands, spells, and fantastic creatures</em>. At Hogwarts, he quickly forms a deep bond with Ron and Hermione, navigates the complexities of wizarding school, and learns the truth about his parents' death. As the year progresses, the trio uncovers a plot to steal a powerful magical artifact hidden within the school, leading them to a dangerous confrontation that tests their <em>courage and budding abilities</em> against the re-emerging darkness.</p>
 
-      <input type="radio" id="tab5" name="tab">
-      <label for="tab5" class="tab-label" role="tab" aria-controls="content5" aria-selected="false">✍️ About the Author</label>
-      <div class="tab-content" id="content5" role="tabpanel">
-        <p><strong>J.K. Rowling</strong> is a British author best known for writing the Harry Potter series. Her journey from living on welfare to becoming one of the most successful authors in history is as inspiring as her stories. She has also written novels under the pseudonym Robert Galbraith.</p>
-      </div>
-    </section>
-
-    <!-- Reviews Section -->
-    <section class="reviews">
-      <h3>📣 Praisers</h3>
-      <blockquote>“A captivating start to a magical series that has enchanted millions.” — <cite>Khushi P.</cite></blockquote>
-      <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” — <cite>Sathi L.</cite></blockquote>
-      <blockquote>“J.K. Rowling’s phenomenal imagination has created a stimulating fantasy world with the power to excite and involve readers of all ages.” — <cite>Supriyo N.</cite></blockquote>
-
-      <h3>🧐 Critics</h3>
-      <blockquote>“The pacing is slow at times, but the world is worth the wait.” — <cite>Sunita M.</cite></blockquote>
-      <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” — <cite>Sourav K.</cite></blockquote>
-    </section>
-  </main>
-
-  <footer>
-    <section class="join">
-      <h2>📝 Join Our Community</h2>
-      <p>Start reviewing books and sharing your thoughts today!</p>
-      <a href="login.html"><button>Sign In</button></a>
-    </section>
-    <p>&copy; 2025 Book Review</p>
-  </footer>
+        <h3 class="section-heading">About the Author</h3>
+        <p><strong>J.K. Rowling</strong> is a British author, screenwriter, and film producer, globally renowned for creating the <strong>Harry Potter fantasy series</strong>. Beginning with <em>Harry Potter and the Philosopher's Stone</em>, the seven-book series has sold over 600 million copies worldwide, becoming the <em>best-selling book series in history</em>. Her imaginative storytelling has not only captivated generations of readers but also spawned a massive global franchise encompassing blockbuster films, theme parks, video games, and numerous spin-offs, profoundly impacting popular culture and children's literature.</p>
+    </div>
+</section>
+</main>
+    <footer>
+        <section class="join">
+            <h2>📝 Join Our Community</h2>
+            <p>Start reviewing books and sharing your thoughts today!</p>
+            <a href="review.html"><button>Get Started</button></a>
+        </section>
+        <p>&copy; 2025 Book Review</p>
+    </footer>
 </body>
 </html>

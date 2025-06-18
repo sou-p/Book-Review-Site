@@ -45,6 +45,9 @@ header {
     color: white;
     text-align: center;
     border-radius: 5px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
 
 nav {
@@ -266,4 +269,31 @@ footer {
     color: white;
     text-align: center;
     border-radius: 5px;
+}
+
+
+.book-details-section .section-heading {
+    color: rgb(74, 144, 226); 
+    margin-top: 25px; 
+    margin-bottom: 10px; 
+    font-size: 1.4em; 
+    text-align: left; 
+    border-bottom: 1px solid rgb(74, 144, 226); 
+    padding-bottom: 5px; 
+}
+
+.book-details ul {
+    margin-left: 20px; 
+    margin-bottom: 15px; 
+    list-style: disc; 
+}
+
+.book-details p {
+    margin-bottom: 15px; 
+}
+
+.book-details .character-description,
+.book-details .theme-description {
+    font-style: italic;
+    color: #555;
 }
