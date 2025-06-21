@@ -4,13 +4,16 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Book Review - Home</title>
+    <title>The Looking Glass Reviews - Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=sw" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
-<header>
-        <h1>Book Review</h1>
+    <header>
+        <img src="assets/images/logo-trans.png" alt="Book Review Logo" class="logo"/>
         <nav>
             <a href="index.html">Home</a>
             <a href="books.html">Books</a>
@@ -22,9 +25,9 @@
             <button>Search</button>
         </section>
     </header>
+
     <main>
 
-        <!-- Genre -->
         <section class="genres">
             <h2>📚 Browse by Genre</h2>
             <div class="genre-buttons">
@@ -36,80 +39,80 @@
             </div>
         </section>
 
-        <!-- Featured -->
         <section class="featured">
-            <h2>📌 Featured Book of the day </h2>
-            <div class="book-grid">
-                <a href="book.html?id=1" class="book-card">
-                    <img src="assets/images/hp1.jpg" alt="Harry Potter Book 1" />
-                    <h3>Harry Potter and the Philosopher's Stone</h3>
-                    <p>By J.K. Rowling</p>
-                    <p>★★★★☆</p>
-                </a>
-                <!-- Comments -->
-         <section class="reviews">
-            <h3>📣 Praisers</h3>
-            <blockquote>“A captivating start to a magical series that has enchanted millions.” — <cite>Khushi P.</cite></blockquote>
-            <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” — <cite>Sathi L.</cite></blockquote>
+            <h2>📌 Featured Book of the Day</h2>
+            <div class="featured-wrapper">
+                <div class="book-feature">
+                    <a href="hp1.html" class="book-card">
+                        <img src="assets/images/hp1.jpg" alt="Cover image of Harry Potter and the Philosopher's Stone" />
+                        <h3>Harry Potter and the Philosopher's Stone</h3>
+                        <p>By J.K. Rowling</p>
+                        <p>★★★★☆</p>
+                    </a>
+                </div>
 
-            <h3>🧐 Critics</h3>
-            <blockquote>“The pacing is slow at times, but the world is worth the wait.” — <cite>Sunita M.</cite></blockquote>
-            <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” — <cite>Sourav K.</cite></blockquote>
-        </section>
+                <div class="reviews">
+                    <h3>📣 Praisers</h3>
+                    <blockquote>“A captivating start to a magical series that has enchanted millions.” <cite>Khushi P.</cite></blockquote>
+                    <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” <cite>Sathi L.</cite></blockquote>
+
+                    <h3>🧐 Critics</h3>
+                    <blockquote>“The pacing is slow at times, but the world is worth the wait.” <cite>Sunita M.</cite></blockquote>
+                    <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” <cite>Supriyo N.</cite></blockquote>
+                </div>
             </div>
         </section>
 
-        <!-- Top -->
         <section class="top-rated">
             <h2>⭐ Top-Rated Books</h2>
             <div class="book-grid">
                 <a href="book.html?id=6" class="book-card">
-                    <img src="assets/images/top1.jpg" alt="The Book Thief" />
+                    <img src="assets/images/bt.jpg" alt="Cover image of The Book Thief" />
                     <h3>The Book Thief</h3>
                     <p>★★★★★</p>
                 </a>
                 <a href="book.html?id=7" class="book-card">
-                    <img src="assets/images/top2.jpg" alt="Brave New World" />
+                    <img src="assets/images/bnw.jpg" alt="Cover image of Brave New World" />
                     <h3>Brave New World</h3>
                     <p>★★★★☆</p>
                 </a>
             </div>
         </section>
 
-        <!-- New -->
         <section class="new-arrivals">
             <h2>🆕 New Arrivals</h2>
             <div class="book-grid">
                 <a href="book.html?id=8" class="book-card">
-                    <img src="assets/images/fourthwing.jpg" alt="Fourth Wing" />
+                    <img src="assets/images/4w.jpg" alt="Cover image of Fourth Wing" />
                     <h3>Fourth Wing</h3>
                     <p>By Rebecca Yarros</p>
                 </a>
                 <a href="book.html?id=9" class="book-card">
-                    <img src="assets/images/yellowface.jpg" alt="Yellowface" />
+                    <img src="assets/images/yf.jpg" alt="Cover image of Yellowface" />
                     <h3>Yellowface</h3>
                     <p>By R.F. Kuang</p>
                 </a>
                 <a href="book.html?id=10" class="book-card">
-                    <img src="assets/images/lessons.jpg" alt="Lessons in Chemistry" />
+                    <img src="assets/images/LiC.jpg" alt="Cover image of Lessons in Chemistry" />
                     <h3>Lessons in Chemistry</h3>
                     <p>By Bonnie Garmus</p>
                 </a>
             </div>
         </section>
 
-        <!-- Upcoming  -->
         <section class="upcoming">
-            <h2> 🗓️ Upcoming Releases</h2>
+            <h2>🗓️ Upcoming Releases</h2>
             <section class="upcoming-books">
                 <p>Stay tuned for these exciting new releases:</p>
-            <ul>
-                <li><strong>June 15:</strong> “The Midnight Library 2” by Matt Haig</li>
-                <li><strong>July 1:</strong> “The Final Chapter” by Jane Doe</li>
-            </ul></section>
+                <ul>
+                    <li><strong>June 15:</strong> “The Midnight Library 2” by Matt Haig</li>
+                    <li><strong>July 1:</strong> “The Final Chapter” by Jane Doe</li>
+                </ul>
+            </section>
         </section>
     </main>
-     <footer>
+
+    <footer>
         <section class="join">
             <h2>📝 Join Our Community</h2>
             <p>Start reviewing books and sharing your thoughts today!</p>
