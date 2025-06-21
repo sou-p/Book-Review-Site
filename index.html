@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-2025" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Looking Glass Reviews - Home</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=sw" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -20,43 +21,52 @@
             <a href="about.html">About Us</a>
             <a href="review.html">Submit Review</a>
         </nav>
-        <section class="search-bar">
-            <input type="text" id="search" placeholder="Search for books..." />
-            <button>Search</button>
-        </section>
     </header>
 
     <main>
 
+           <section class="search-bar">
+                <input type="text" id="search" placeholder="Search for books..." />
+                <button>Search</button>
+        </section>
+
         <section class="genres">
-            <h2>📚 Browse by Genre</h2>
+            <h2><i class="fa-solid fa-book"></i> Browse by Genre</h2>
             <div class="genre-buttons">
                 <button>Fiction</button>
                 <button>Mystery</button>
                 <button>Fantasy</button>
                 <button>Non-Fiction</button>
                 <button>Romance</button>
+                <button>Sci-Fi</button>
             </div>
         </section>
 
         <section class="featured">
-            <h2>📌 Featured Book of the Day</h2>
+            <h2><i class="fa-solid fa-thumbtack"></i> Featured Book of the Day</h2>
             <div class="featured-wrapper">
                 <div class="book-feature">
                     <a href="hp1.html" class="book-card">
                         <img src="assets/images/hp1.jpg" alt="Cover image of Harry Potter and the Philosopher's Stone" />
                         <h3>Harry Potter and the Philosopher's Stone</h3>
-                        <p>By J.K. Rowling</p>
-                        <p>★★★★☆</p>
+                        <p>By <strong>J.K. Rowling</strong></p>
+                        <p>Genre: Fantasy</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </p>
                     </a>
                 </div>
 
                 <div class="reviews">
-                    <h3>📣 Praisers</h3>
+                    <h3><i class="fa-solid fa-bullhorn"></i> Praisers</h3>
                     <blockquote>“A captivating start to a magical series that has enchanted millions.” <cite>Khushi P.</cite></blockquote>
                     <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.” <cite>Sathi L.</cite></blockquote>
 
-                    <h3>🧐 Critics</h3>
+                    <h3><i class="fa-solid fa-magnifying-glass"></i> Critics</h3>
                     <blockquote>“The pacing is slow at times, but the world is worth the wait.” <cite>Sunita M.</cite></blockquote>
                     <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking any real danger.” <cite>Supriyo N.</cite></blockquote>
                 </div>
@@ -64,49 +74,145 @@
         </section>
 
         <section class="top-rated">
-            <h2>⭐ Top-Rated Books</h2>
-            <div class="book-grid">
-                <a href="book.html?id=6" class="book-card">
-                    <img src="assets/images/bt.jpg" alt="Cover image of The Book Thief" />
-                    <h3>The Book Thief</h3>
-                    <p>★★★★★</p>
-                </a>
-                <a href="book.html?id=7" class="book-card">
-                    <img src="assets/images/bnw.jpg" alt="Cover image of Brave New World" />
-                    <h3>Brave New World</h3>
-                    <p>★★★★☆</p>
-                </a>
+            <h2><i class="fa-solid fa-star"></i> Top-Rated Books</h2>
+            <div class="scroll-container">
+                <div class="book-grid">
+                    <a href="book.html?id=19" class="book-card">
+                        <img src="assets/images/sap.jpg" alt="Cover image of Sapiens: A Brief History of Humankind" />
+                        <h3>Sapiens</h3>
+                        <p>By <strong>Yuval Noah Harari</strong></p>
+                        <p>Genre: Non-Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=20" class="book-card">
+                        <img src="assets/images/hobbit.jpg" alt="Cover image of The Hobbit" />
+                        <h3>The Hobbit</h3>
+                        <p>By <strong>J.R.R. Tolkien</strong></p>
+                        <p>Genre: Fantasy</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=6" class="book-card">
+                        <img src="assets/images/bt.jpg" alt="Cover image of The Book Thief" />
+                        <h3>The Book Thief</h3>
+                        <p>By <strong>Markus Zusak</strong></p>
+                        <p>Genre: Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=25" class="book-card">
+                        <img src="assets/images/bhag.jpg" alt="Cover image of Why I Am An Atheist" />
+                        <h3>Why I Am An Atheist</h3>
+                        <p>By <strong>Bhagat Singh</strong></p>
+                        <p>Genre: Non-Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=15" class="book-card">
+                        <img src="assets/images/beach.jpg" alt="Cover image of Beach Read" />
+                        <h3>Beach Read</h3>
+                        <p>By <strong>Emily Henry</strong></p>
+                        <p>Genre: Romance</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=7" class="book-card">
+                        <img src="assets/images/bnw.jpg" alt="Cover image of Brave New World" />
+                        <h3>Brave New World</h3>
+                        <p>By <strong>Aldous Huxley</strong></p>
+                        <p>Genre: Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=21" class="book-card">
+                        <img src="assets/images/wof.jpg" alt="Cover image of Wings of Fire" />
+                        <h3>Wings of Fire</h3>
+                        <p>By <strong>A.P.J. Abdul Kalam</strong></p>
+                        <p>Genre: Non-Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=11" class="book-card">
+                        <img src="assets/images/silent.jpg" alt="Cover image of The Silent Patient" />
+                        <h3>The Silent Patient</h3>
+                        <p>By <strong>Alex Michaelides</strong></p>
+                        <p>Genre: Mystery</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="new-arrivals">
-            <h2>🆕 New Arrivals</h2>
-            <div class="book-grid">
-                <a href="book.html?id=8" class="book-card">
-                    <img src="assets/images/4w.jpg" alt="Cover image of Fourth Wing" />
-                    <h3>Fourth Wing</h3>
-                    <p>By Rebecca Yarros</p>
-                </a>
-                <a href="book.html?id=9" class="book-card">
-                    <img src="assets/images/yf.jpg" alt="Cover image of Yellowface" />
-                    <h3>Yellowface</h3>
-                    <p>By R.F. Kuang</p>
-                </a>
-                <a href="book.html?id=10" class="book-card">
-                    <img src="assets/images/LiC.jpg" alt="Cover image of Lessons in Chemistry" />
-                    <h3>Lessons in Chemistry</h3>
-                    <p>By Bonnie Garmus</p>
-                </a>
+            <h2><i class="fa-solid fa-sparkles"></i> New Arrivals</h2>
+            <div class="scroll-container">
+                <div class="book-grid">
+                    <a href="book.html?id=9" class="book-card">
+                        <img src="assets/images/yf.jpg" alt="Cover image of Yellowface" />
+                        <h3>Yellowface</h3>
+                        <p>By <strong>R.F. Kuang</strong></p>
+                        <p>Genre: Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=8" class="book-card">
+                        <img src="assets/images/4w.jpg" alt="Cover image of Fourth Wing" />
+                        <h3>Fourth Wing</h3>
+                        <p>By <strong>Rebecca Yarros</strong></p>
+                        <p>Genre: Fantasy</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=10" class="book-card">
+                        <img src="assets/images/LiC.jpg" alt="Cover image of Lessons in Chemistry" />
+                        <h3>Lessons in Chemistry</h3>
+                        <p>By <strong>Bonnie Garmus</strong></p>
+                        <p>Genre: Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        </p>
+                    </a>
+                    <a href="book.html?id=22" class="book-card">
+                        <img src="assets/images/nas.jpg" alt="Cover image of Nastik: Why I Am Not an Atheist" />
+                        <h3>Nastik: Why I Am Not an Atheist</h3>
+                        <p>By <strong>Kushal Mehra</strong></p>
+                        <p>Genre: Non-Fiction</p>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        </p>
+                    </a>
+                </div>
             </div>
         </section>
 
         <section class="upcoming">
-            <h2>🗓️ Upcoming Releases</h2>
+            <h2><i class="fa-solid fa-calendar-alt"></i> Upcoming Releases</h2>
             <section class="upcoming-books">
                 <p>Stay tuned for these exciting new releases:</p>
                 <ul>
-                    <li><strong>June 15:</strong> “The Midnight Library 2” by Matt Haig</li>
-                    <li><strong>July 1:</strong> “The Final Chapter” by Jane Doe</li>
+                    <li><strong>June 15:</strong> “The Star-Crossed Promise” by <strong>Sarah J. Maas</strong> (Genre: Fiction)</li>
+                    <li><strong>July 1:</strong> “Echoes in the Silence” by <strong>Emily Stone</strong> (Genre: Fiction)</li>
+                    <li><strong>August 10:</strong> “The Last Whisper” by <strong>Alex North</strong> (Genre: Fiction)</li>
                 </ul>
             </section>
         </section>
@@ -114,7 +220,7 @@
 
     <footer>
         <section class="join">
-            <h2>📝 Join Our Community</h2>
+            <h2><i class="fa-solid fa-pencil"></i> Join Our Community</h2>
             <p>Start reviewing books and sharing your thoughts today!</p>
             <a href="review.html"><button>Get Started</button></a>
         </section>
