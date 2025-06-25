@@ -5,36 +5,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>The Looking Glass Reviews - Home</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
     <header>
         <img src="assets/images/logo-trans.png" alt="Book Review Logo" class="logo" />
+        <div class="banner"><img src="assets/images/banner-1.png" alt="Banner 1"><img src="assets/images/banner-2.png"
+                alt="Banner 2"></div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="books.html">Books</a>
-            <a href="about.html">About Us</a>
-            <a href="review.html">Submit Review</a>
+            <a href="index.html"><i class="fa fa-home"></i> &nbsp; Home</a>
+            <a href="books.html"><i class="fa fa-book"></i> &nbsp; Books</a>
+            <a href="about.html"><i class="fa fa-info-circle"></i> &nbsp; About Us</a>
+            <a href="review.html"><i class="fa fa-pencil-alt"></i> &nbsp; Submit Review</a>
         </nav>
     </header>
 
     <main>
         <section class="search-bar">
             <input type="text" id="search" placeholder="Search for books..." />
-            <button>Search</button>
+            <button><i class="fa fa-search"></i>&nbsp; Search</button>
         </section>
 
         <section class="genres">
-            <h2><i class="fa-solid fa-book"></i> Browse by Genre</h2>
+            <h2><i class="fa fa-book-open"></i> Browse by Genre</h2>
             <div class="genre-buttons">
                 <button>Fiction</button>
                 <button>Mystery</button>
@@ -46,43 +44,47 @@
         </section>
 
         <section class="featured">
-            <h2><i class="fa-solid fa-thumbtack"></i> Featured Book of the Day</h2>
+            <h2><i class="fa-solid fa-web-awesome"></i> Featured Book of the Day</h2>
             <div class="featured-wrapper">
                 <div class="book-feature">
                     <a href="books/harrypotter1.html" class="book-card">
-                        <img src="assets/images/hp1.jpg" alt="Cover image of Harry Potter and the Philosopher's Stone" />
+                        <img src="assets/images/hp1.jpg"
+                            alt="Cover image of Harry Potter and the Philosopher's Stone" />
                         <h3>Harry Potter and the Philosopher's Stone</h3>
                         <p>By <strong>J.K. Rowling</strong></p>
                         <p>Genre: Fantasy</p>
                         <p class="star-rating">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
                             <i class="fa-regular fa-star"></i>
                         </p>
                     </a>
                 </div>
 
                 <div class="reviews">
-                    <h3><i class="fa-solid fa-bullhorn"></i> Praisers</h3>
-                    <blockquote>“A captivating start to a magical series that has enchanted millions.” <cite>Khushi P.</cite>
+                    <h3><i class="fa-solid fa-award"></i> Praisers</h3>
+                    <blockquote>“A captivating start to a magical series that has enchanted millions.” <cite>Khushi
+                            P.</cite>
                     </blockquote>
-                    <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the story.”
+                    <blockquote>“Rowling's world-building is unparalleled, making you feel like you're part of the
+                        story.”
                         <cite>Sathi L.</cite>
                     </blockquote>
 
-                    <h3><i class="fa-solid fa-magnifying-glass"></i> Critics</h3>
+                    <h3><i class="fa fa-magnifying-glass"></i> Critics</h3>
                     <blockquote>“The pacing is slow at times, but the world is worth the wait.” <cite>Sunita M.</cite>
                     </blockquote>
-                    <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and lacking
+                    <blockquote>“Several instances of Deus Ex Machina make the protagonist’s position very safe and
+                        lacking
                         any real danger.” <cite>Supriyo N.</cite></blockquote>
                 </div>
             </div>
         </section>
 
         <section class="top-rated">
-            <h2><i class="fa-solid fa-star"></i> Top-Rated Books</h2>
+            <h2><i class="fa fa-star"></i> Top-Rated Books</h2>
             <div class="book-grid">
                 <a href="book.html?id=19" class="book-card">
                     <img src="assets/images/sap.jpg" alt="Cover image of Sapiens: A Brief History of Humankind" />
@@ -90,8 +92,8 @@
                     <p>By <strong>Yuval Noah Harari</strong></p>
                     <p>Genre: Non-Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="books/hobbit.html" class="book-card">
@@ -100,8 +102,8 @@
                     <p>By <strong>J.R.R. Tolkien</strong></p>
                     <p>Genre: Fantasy</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=6" class="book-card">
@@ -110,11 +112,11 @@
                     <p>By <strong>Markus Zusak</strong></p>
                     <p>Genre: Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=25" class="book-card">
@@ -123,8 +125,8 @@
                     <p>By <strong>Bhagat Singh</strong></p>
                     <p>Genre: Non-Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=15" class="book-card">
@@ -133,8 +135,8 @@
                     <p>By <strong>Emily Henry</strong></p>
                     <p>Genre: Romance</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=7" class="book-card">
@@ -143,11 +145,11 @@
                     <p>By <strong>Aldous Huxley</strong></p>
                     <p>Genre: Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
                 <a href="book.html?id=21" class="book-card">
@@ -156,8 +158,8 @@
                     <p>By <strong>A.P.J. Abdul Kalam</strong></p>
                     <p>Genre: Non-Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
                 <a href="book.html?id=11" class="book-card">
@@ -166,8 +168,8 @@
                     <p>By <strong>Alex Michaelides</strong></p>
                     <p>Genre: Mystery</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
 
@@ -177,8 +179,8 @@
                     <p>By <strong>Frank Herbert</strong></p>
                     <p>Genre: Sci-Fi</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=28" class="book-card">
@@ -187,15 +189,15 @@
                     <p>By <strong>Chanakya</strong></p>
                     <p>Genre: Non-Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
             </div>
         </section>
 
         <section class="new-arrivals">
-            <h2><i class="fa-solid fa-bell"></i> New Arrivals</h2>
+            <h2><i class="fa-solid fa-newspaper"></i></i> New Arrivals</h2>
             <div class="book-grid">
                 <a href="book.html?id=9" class="book-card">
                     <img src="assets/images/yf.jpg" alt="Cover image of Yellowface" />
@@ -203,8 +205,8 @@
                     <p>By <strong>R.F. Kuang</strong></p>
                     <p>Genre: Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
                 <a href="book.html?id=8" class="book-card">
@@ -213,8 +215,8 @@
                     <p>By <strong>Rebecca Yarros</strong></p>
                     <p>Genre: Fantasy</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
                 <a href="book.html?id=10" class="book-card">
@@ -223,8 +225,8 @@
                     <p>By <strong>Bonnie Garmus</strong></p>
                     <p>Genre: Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star-half-stroke"></i>
                     </p>
                 </a>
                 <a href="books/nastik.html" class="book-card">
@@ -233,8 +235,8 @@
                     <p>By <strong>Kushal Mehra</strong></p>
                     <p>Genre: Non-Fiction</p>
                     <p class="star-rating">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
-                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i
+                            class="fa fa-star"></i><i class="fa fa-star"></i>
                     </p>
                 </a>
 
@@ -242,26 +244,46 @@
         </section>
 
         <section class="upcoming">
-            <h2><i class="fa-solid fa-calendar-alt"></i> Upcoming Releases</h2>
-            <section class="upcoming-books">
-                <p>Stay tuned for these exciting new releases:</p>
-                <ul>
-                    <li><strong>June 15:</strong> “The Star-Crossed Promise” by <strong>Sarah J. Maas</strong> (Genre: Fiction)</li>
-                    <li><strong>July 1:</strong> “Echoes in the Silence” by <strong>Emily Stone</strong> (Genre: Fiction)</li>
-                    <li><strong>August 10:</strong> “The Last Whisper” by <strong>Alex North</strong> (Genre: Fiction)</li>
-                </ul>
-            </section>
+            <h2>
+                <i class="fa-solid fa-bell"></i> Upcoming Releases
+            </h2>
+            <ul class="release-list">
+                <li><i class="fa-solid fa-angles-right"></i>
+                    <span class="release-date">January 21, 2025:</span><span class="book-title">
+                        “Onyx Storm”</span> by <span class="author">Rebecca Yarros</span>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i>
+                    <span class="release-date">March 18, 2025:</span><span class="book-title">
+                        “Sunrise on the Reaping”</span> by <span class="author">Suzanne Collins</span>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i>
+                    <span class="release-date">June 3, 2025:</span><span class="book-title"></span>
+                    “Atmosphere: A Love Story”</span> by <span class="author">Taylor Jenkins Reid</span>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i>
+                    <span class="release-date">June 10, 2025:</span><span class="book-title">
+                        “Bury Our Bones in the Midnight Soil”</span> by <span class="author">V.E. Schwab</span>
+                </li>
+                <li><i class="fa-solid fa-angles-right"></i>
+                    <span class="release-date">August 26, 2025:</span><span class="book-title">
+                        “Katabasis”</span> by <span class="author">R.F. Kuang</span>
+                </li>
+            </ul>
         </section>
     </main>
 
     <footer>
         <section class="join">
-            <h2><i class="fa-solid fa-pencil"></i> Join Our Community</h2>
+            <h2><i class="fa fa-comments"></i> Join Our Community</h2>
+            <img src="assets/images/review.png" alt="reviewing books" />
+            <p><strong>Love Books? </strong>Join our community of book lovers!</p>
             <p>Start reviewing books and sharing your thoughts today!</p>
-            <a href="/review.html"><button>Get Started</button></a>
+            <a href="/review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i> Get Started</button></a>
         </section>
-        <p>&copy; 2025 Book Review</p>
+
+        <p>&copy; 2025 Looking Glass Reviews</p>
     </footer>
+
 </body>
 
 </html>

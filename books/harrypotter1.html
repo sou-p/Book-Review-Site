@@ -4,49 +4,55 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description"
-        content="An in-depth review of 'Harry Potter and the Philosopher's Stone' including characters, themes, reviews, and author bio.">
     <title>Harry Potter and the Philosopher's Stone - Review</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="../assets/images/fav.png">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
         <img src="../assets/images/logo-trans.png" alt="Book Review Logo" class="logo" />
+        <div class="banner"><img src="../assets/images/banner-1.png" alt="Banner 1"><img
+                src="../assets/images/banner-2.png" alt="Banner 2"></div>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../books.html">Books</a>
-            <a href="../about.html">About Us</a>
-            <a href="../review.html">Submit Review</a>
+            <a href="../index.html"><i class="fa fa-home"></i> &nbsp; Home</a>
+            <a href="../books.html"><i class="fa fa-book"></i> &nbsp; Books</a>
+            <a href="../about.html"><i class="fa fa-info-circle"></i> &nbsp; About Us</a>
+            <a href="../review.html"><i class="fa fa-pencil-alt"></i> &nbsp; Submit Review</a>
         </nav>
     </header>
 
     <main>
         <section class="search-bar">
             <input type="text" id="search" placeholder="Search for books..." />
-            <button aria-label="Search">Search</button>
+            <button><i class="fa fa-search"></i>&nbsp; Search</button>
+        </section>
+        <section class="genres">
+            <h2><i class="fa fa-book-open"></i> Browse by Genre</h2>
+            <div class="genre-buttons">
+                <button>Fiction</button>
+                <button>Mystery</button>
+                <button>Fantasy</button>
+                <button>Non-Fiction</button>
+                <button>Romance</button>
+                <button>Sci-Fi</button>
+            </div>
         </section>
 
         <section class="featured">
-            <h2>Harry Potter and the Philosopher's Stone</h2>
+            <h2><i class="fa-solid fa-quote-left"></i> Harry Potter and the Philosopher's Stone <i
+                    class="fa-solid fa-quote-right"></i></h2>
             <div class="featured-wrapper">
                 <div class="book-feature">
                     <a href="https://dn721806.ca.archive.org/0/items/01-harry-potter-and-the-sorcerers-stone/01%20Harry%20Potter%20and%20the%20Sorcerer%27s%20Stone.pdf"
-                        class="book-card" target="_blank" rel="noopener noreferrer"
-                        aria-label="Read Harry Potter and the Philosopher's Stone PDF">
+                        class="book-card" target="_blank" rel="noopener noreferrer">
                         <img src="../assets/images/hp1.jpg"
                             alt="Cover image of Harry Potter and the Philosopher's Stone" />
-                        <h3>Harry Potter and the Philosopher's Stone</h3>
-                        <p>By <strong>J.K. Rowling</strong></p>
-                        <p>Genre: Fantasy</p>
+                        <p class="author">By <strong>J.K. Rowling</strong></p>
+                        <p class="genre"><strong>Genre:</strong> Fantasy</p>
                         <p class="star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
@@ -105,7 +111,7 @@
                     </blockquote>
                 </div>
             </div>
-            <div class="buy-button-container">
+            <div class="rel-button-container">
                 <a href="https://www.amazon.com/Harry-Potter-Philosophers-Stone-1/dp/0747532699" class="amazon">
                     <i class="fa-brands fa-amazon"></i> Buy on Amazon
                 </a>
@@ -124,7 +130,7 @@
 
         <section class="book-details-section">
             <div class="book-details">
-                <h3 class="section-heading"><i class="fa-solid fa-book-open"></i> Overview</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-eye"></i> Overview</h3>
                 <p>This enchanting first installment introduces us to <strong>Harry Potter</strong>, an orphaned boy
                     leading a miserable life with his abusive aunt and uncle. On his eleventh birthday, he discovers
                     he's a wizard and is invited to attend <strong>Hogwarts School of Witchcraft and Wizardry</strong>.
@@ -189,16 +195,21 @@
                 <p>J.K. Rowling's debut novel, "Harry Potter and the Philosopher's Stone," masterfully lays the
                     groundwork for an expansive and intricately detailed magical world. The narrative is driven by a
                     classic orphan-hero trope, but it's executed with fresh charm and genuine warmth. Rowling's writing
-                    style is accessible, engaging, and perfectly suited for its target audience, yet it possesses a depth
+                    style is accessible, engaging, and perfectly suited for its target audience, yet it possesses a
+                    depth
                     that resonates with readers of all ages. The pacing is generally well-handled, gradually introducing
                     the reader to the wizarding world alongside Harry, allowing for a sense of wonder and discovery.</p>
 
-                <p>Character development, even in this introductory volume, is strong. Harry's journey from a downtrodden
+                <p>Character development, even in this introductory volume, is strong. Harry's journey from a
+                    downtrodden
                     orphan to a hopeful wizard is compelling. Hermione's intellect and Ron's loyalty establish the core
                     dynamic of the golden trio, which remains a cornerstone throughout the series. Supporting characters
-                    like Hagrid, Dumbledore, and Snape are immediately memorable, each with distinct personalities and hints
-                    of deeper complexities that would be explored in later books. The world-building is truly exceptional;
-                    Hogwarts itself feels like a living, breathing entity, and the details of wizarding life, from Quidditch
+                    like Hagrid, Dumbledore, and Snape are immediately memorable, each with distinct personalities and
+                    hints
+                    of deeper complexities that would be explored in later books. The world-building is truly
+                    exceptional;
+                    Hogwarts itself feels like a living, breathing entity, and the details of wizarding life, from
+                    Quidditch
                     to magical sweets, are imaginative and consistently enchanting.</p>
 
                 <h4>Pros:</h4>
@@ -207,10 +218,12 @@
                         detailed, drawing readers in completely.</li>
                     <li><strong>Memorable Characters:</strong> Harry, Ron, and Hermione, along with the supporting cast,
                         are instantly likable and relatable.</li>
-                    <li><strong>Engaging Plot:</strong> A classic adventure story with a compelling mystery at its heart.</li>
+                    <li><strong>Engaging Plot:</strong> A classic adventure story with a compelling mystery at its
+                        heart.</li>
                     <li><strong>Accessible Writing Style:</strong> Easy to read and understand, making it enjoyable for
                         younger readers while still captivating adults.</li>
-                    <li><strong>Strong Thematic Foundations:</strong> Introduces key themes like friendship, good vs. evil,
+                    <li><strong>Strong Thematic Foundations:</strong> Introduces key themes like friendship, good vs.
+                        evil,
                         and the importance of choice that define the series.</li>
                 </ul>
 
@@ -218,15 +231,19 @@
                 <ul>
                     <li><strong>Predictable Elements:</strong> For some adult readers, certain plot points might feel
                         a bit formulaic or predictable.</li>
-                    <li><strong>Simpler Conflicts:</strong> Compared to later books in the series, the stakes and dangers
+                    <li><strong>Simpler Conflicts:</strong> Compared to later books in the series, the stakes and
+                        dangers
                         are relatively less complex, although appropriate for an introductory novel.</li>
                     <li><strong>Pacing variations:</strong> While mostly good, some sections can feel a bit slower as
                         the world is established.</li>
                 </ul>
-                <p>Overall, "Harry Potter and the Philosopher's Stone" is a delightful and essential read. It's a testament
-                    to Rowling's storytelling prowess, successfully launching a global phenomenon and establishing a beloved
+                <p>Overall, "Harry Potter and the Philosopher's Stone" is a delightful and essential read. It's a
+                    testament
+                    to Rowling's storytelling prowess, successfully launching a global phenomenon and establishing a
+                    beloved
                     universe that continues to captivate hearts and imaginations worldwide. Despite minor quibbles, its
-                    strengths in world-building, characterization, and thematic resonance make it a truly magical beginning.</p>
+                    strengths in world-building, characterization, and thematic resonance make it a truly magical
+                    beginning.</p>
 
             </div>
         </section>
@@ -234,12 +251,16 @@
 
     <footer>
         <section class="join">
-            <h2><i class="fa-solid fa-pencil"></i> Join Our Community</h2>
+            <h2><i class="fa fa-comments"></i> Join Our Community</h2>
+            <img src="../assets/images/review.png" alt="reviewing books" />
+            <p><strong>Love Books? </strong>Join our community of book lovers!</p>
             <p>Start reviewing books and sharing your thoughts today!</p>
-            <a href="/review.html"><button>Get Started</button></a>
+            <a href="/review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i> Get Started</button></a>
         </section>
-        <p>&copy; 2025 Book Review</p>
+
+        <p>&copy; 2025 Looking Glass Reviews</p>
     </footer>
+
 </body>
 
 </html>
