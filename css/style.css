@@ -118,21 +118,33 @@ nav a:hover {
   flex-wrap: nowrap;
 }
 
- input {
+input {
   flex: 1 1 auto;
   min-width: 0;
+  width: 100%;
   padding: 10px 15px;
+  font-family: "Open Sans", sans-serif;
   font-size: 1em;
-  border-radius: 20px;
+  color: #333;
   border: 1px solid #ccc;
+  border-radius: 20px;
+  background-color: #ffffff;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input:hover {
+  border-color: #a0a0a0;
 }
 
 input:focus {
-  border-color: #4a90e2; 
-  box-shadow: 0 0 0 2px rgba(74, 144, 226, 0.2); 
-  outline: none; 
+  border-color: #ff8c42;
+  box-shadow: 0 0 0 4px rgba(255, 140, 66, 0.3);
 }
 
+input::placeholder {
+  color: #999;
+}
 .search-bar button {
   flex-shrink: 0;
   background-color: rgb(255, 174, 0);
@@ -238,14 +250,13 @@ section h2 {
 .featured .reviews {
   flex: 1 1 min(450px, 100%);
   max-width: 600px;
-  background: transparent;
   border-radius: 8px;
   margin: 0 auto;
 }
 .featured .scrollable-reviews {
   height: clamp(550px, 50vh, 800px);
-  overflow-y: auto; 
-  scrollbar-width: thin; 
+  overflow-y: auto;
+  scrollbar-width: none;
   scrollbar-color: #4a90e2 #f1f1f1;
 }
 
@@ -460,20 +471,19 @@ blockquote .star-rating {
   margin: 5px 0px;
 }
 
-
 .review-form {
   display: flex;
   flex-direction: column;
-  gap: 15px; 
+  gap: 15px;
   padding: clamp(20px, 5vw, 30px);
   border-radius: 8px;
 }
 
 .review-form label {
-  display: block; 
+  display: block;
   font-weight: 600;
   margin-bottom: 8px;
-  color: #4a90e2; 
+  color: #4a90e2;
   font-size: 1.1em;
 }
 
@@ -492,50 +502,50 @@ blockquote .star-rating {
 .review-form input[type="text"]:focus,
 .review-form input[type="email"]:focus,
 .review-form textarea:focus {
-  border-color: #4a90e2; 
-  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2); 
-  outline: none; 
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  outline: none;
 }
 
 .review-form textarea {
-  resize: vertical; 
+  resize: vertical;
   min-height: 100px;
   max-width: 100%;
 }
 
 .star-rating-input {
   display: flex;
-  flex-direction: row-reverse; 
-  justify-content: flex-end; 
+  flex-direction: row-reverse;
+  justify-content: flex-end;
   gap: 5px;
 }
 
-.star-rating-input input[type="radio"]:checked ~ label{
-  color: #ffc107; 
+.star-rating-input input[type="radio"]:checked ~ label {
+  color: #ffc107;
 }
 .star-rating-input input[type="radio"]:hover ~ label {
-  color: #ffc107d3; 
+  color: #ffc107d3;
 }
 
 .star-rating-input input[type="radio"] {
-  display: none; 
+  display: none;
 }
 
 .star-rating-input label {
   cursor: pointer;
-  font-size: 1.8em; 
-  color: #ccc; 
+  font-size: 1.8em;
+  color: #ccc;
   transition: color 0.2s ease;
-  margin-bottom: 0; 
+  margin-bottom: 0;
 }
 
 .review-form .submit-button {
-  background-color: rgb(255, 174, 0); 
+  background-color: rgb(255, 174, 0);
   color: white;
   padding: clamp(8px, 2vw, 10px) clamp(15px, 4vw, 20px);
-  border-radius: 25px; 
+  border-radius: 25px;
   font-weight: bold;
-  align-self: center; 
+  align-self: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
@@ -557,6 +567,20 @@ blockquote .star-rating {
   background-color: rgb(150, 150, 150);
 }
 
+.return-to-top-button {
+  color: #4a90e2;
+  display: block;
+  margin: clamp(20px, 5vw, 30px) auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50px;
+  padding: clamp(5px, 1.5vw, 10px) clamp(10px, 2vw, 20px);
+  max-width: fit-content;
+  text-align: center;
+}
+.return-to-top-button:hover {
+  color: #0077ff;
+  background-color: #c0c0c0;
+}
 
 @media (max-width: 600px) {
   header {

@@ -3,34 +3,135 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Book Review - Login</title>
+  <title>The Looking Glass Reviews - About Us</title>
+  <link rel="icon" href="assets/images/fav.png" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/about.css" />
+
 </head>
+
 <body>
   <header>
-    <h1>Login</h1>
+    <img src="assets/images/logo-trans.png" alt="Book Review Logo" class="logo" />
+    <div class="banner">
+      <img src="assets/images/banner-1.png" alt="Banner 1">
+      <img src="assets/images/banner-2.png" alt="Banner 2">
+    </div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="login.html">Login</a>
-      <a href="review.html">Submit Review</a>
+      <a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+      <a href="books.html"><i class="fa fa-book"></i>&nbsp;&nbsp;Books</a>
+      <a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Us</a>
+      <a href="review.html"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;Submit Review</a>
     </nav>
   </header>
 
   <main>
-    <form id="login-form">
-      <label for="username">Username:</label><br />
-      <input type="text" id="username" name="username" required /><br />
+    <section>
+      <h2><i class="fa fa-users"></i>&nbsp;&nbsp;Our Curious Crew</h2>
+      <p>At <strong>The Looking Glass</strong>, we believe in the power of discovery, and our work is truly a community effort! We're a dedicated group, passionately committed to providing honest, insightful critiques to help you find your next great read.</p>
 
-      <label for="password">Password:</label><br />
-      <input type="password" id="password" name="password" required /><br />
+      <div class="team-grid">
 
-      <button type="submit">Login</button>
-    </form>
+        <div class="team-member member-supriyo">
+          <div class="member-inner">
+            <img src="assets/images/team/supriyo.jpg" alt="Supriyo">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Supriyo Nandi</h3>
+              <p class="role">Fantasy & Sci-Fi Lead</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member member-sourav">
+          <div class="member-inner">
+            <img src="assets/images/team/sourav.jpg" alt="Sourav">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Sourav Kr. Singh</h3>
+              <p class="role">Design & Implementation</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member member-sunita">
+          <div class="member-inner">
+            <img src="assets/images/team/sunita.jpg" alt="Sunita">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Sunita Mondal</h3>
+              <p class="role">Mystery & Thriller Expert</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member member-sathi">
+          <div class="member-inner">
+            <img src="assets/images/team/sathi.jpg" alt="Sathi">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Sathi Low</h3>
+              <p class="role">Non-Fiction Specialist</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="team-member member-khushi">
+          <div class="member-inner">
+            <img src="assets/images/team/khushi.jpg" alt="Khushi">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Khushi Pandey</h3>
+              <p class="role">Review & Feedback</p>
+            </div>
+          </div>
+        </div>
+        <div class="team-member community">
+          <div class="member-inner">
+            <img src="assets/images/team/community.png" alt="Community">
+            <div class="team-member-content">
+              <br><br>
+              <h3>Our Community</h3>
+              <p class="role">Loyal Supporters</p>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2><i class="fa fa-share-alt"></i>&nbsp;&nbsp;Connect With Us!</h2>
+      <div class="social-icons">
+        <a href="https://t.me/" class="social-button telegram-bg">
+          <i class="fa-brands fa-telegram"></i>
+          <span>Telegram</span>
+        </a>
+        <a href="https://www.reddit.com/" class="social-button reddit-bg">
+          <i class="fa-brands fa-reddit-alien"></i>
+          <span>Reddit</span>
+        </a>
+        <a href="https://www.instagram.com/" class="social-button instagram-bg">
+          <i class="fa-brands fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+      </div>
+      <p>Join the <strong>Tea Party</strong> for discussions, get updates, and share your favorites!</p>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Book Review</p>
+    <section class="join">
+      <h2><i class="fa fa-comments"></i>&nbsp;&nbsp;Join Our Community</h2>
+      <img src="assets/images/review.png" alt="reviewing books" />
+      <p><strong>Love Books?</strong> Join our community of book lovers!</p>
+      <p>Start reviewing books and sharing your thoughts today!</p>
+      <a href="/review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Get Started</button></a>
+    </section>
+    <pre>&copy; 2025 Looking Glass Reviews</pre>
   </footer>
 </body>
 </html>
