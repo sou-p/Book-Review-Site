@@ -7,54 +7,66 @@
     <meta name="description"
         content="An in-depth review of 'The Hobbit' including characters, themes, reviews, and author bio.">
     <title>The Hobbit - Review</title>
+    <link rel="icon" type="image/x-icon" href="../assets/images/fav.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 
 <body>
     <header>
         <img src="../assets/images/logo-trans.png" alt="Book Review Logo" class="logo" />
+        <div class="banner"><img src="../assets/images/banner-1.png" alt="Banner 1"><img
+                src="../assets/images/banner-2.png" alt="Banner 2"></div>
         <nav>
-            <a href="../index.html">Home</a>
-            <a href="../books.html">Books</a>
-            <a href="../about.html">About Us</a>
-            <a href="../review.html">Submit Review</a>
+            <a href="../index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+            <a href="../books.html"><i class="fa fa-book"></i>&nbsp;&nbsp;Books</a>
+            <a href="../about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Us</a>
+            <a href="../review.html"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;Submit Review</a>
         </nav>
     </header>
 
     <main>
         <section class="search-bar">
             <input type="text" id="search" placeholder="Search for books..." />
-            <button aria-label="Search">Search</button>
+            <button><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>
+        </section>
+        <section class="genres">
+            <h2><i class="fa fa-book-open"></i>&nbsp;&nbsp;Browse by Genre</h2>
+            <div class="genre-buttons">
+                <a href="../books.html#fiction"><button>Fiction</button></a>
+                <a href="../books.html#mystery"><button>Mystery</button></a>
+                <a href="../books.html#fantasy"><button>Fantasy</button></a>
+                <a href="../books.html#non-fiction"><button>Non-Fiction</button></a>
+                <a href="../books.html#romance"><button>Romance</button></a>
+                <a href="../books.html#sci-fi"><button>Sci-Fi</button></a>
+            </div>
         </section>
 
         <section class="featured">
-            <h2>The Hobbit</h2>
+            <h2><i class="fa-solid fa-quote-left"></i>&nbsp;&nbsp;The Hobbit <i
+                    class="fa-solid fa-quote-right"></i></h2>
             <div class="featured-wrapper">
                 <div class="book-feature">
                     <a href="" class="book-card">
                         <img src="../assets/images/hobbit.jpg" alt="Cover image of The Hobbit" />
-                        <h3>The Hobbit</h3>
-                        <p>By <strong>J.R.R. Tolkien</strong></p>
-                        <p>Genre: Fantasy</p>
+                        <p class="author">By <strong>J.R.R. Tolkien</strong></p>
+                        <p class="genre"><strong>Genre:</strong> Fantasy</p>
                         <p class="star-rating">
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
                             <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-solid fa-star"></i>
                         </p>
                     </a>
                 </div>
 
-                <div class="reviews">
+                <div class="reviews scrollable-reviews">
                     <blockquote>
                         <p class="star-rating">
                             <i class="fa-solid fa-star"></i>
@@ -97,19 +109,26 @@
                         </p>
                         “Perfect for all ages, a true masterpiece of fantasy.” <cite>Supriyo N.</cite>
                     </blockquote>
+                     <blockquote>
+                        <p class="star-rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </p>
+                        “A captivating journey that sets the stage for a grander world!” <cite>Sourav K.</cite>
+                    </blockquote>
                 </div>
             </div>
-            <div class="buy-button-container">
+            <div class="rel-button-container">
                 <a href="https://www.amazon.com/Hobbit-J-R-R-Tolkien/dp/054792822X" class="amazon" target="_blank"
                     rel="noopener noreferrer">
-                    <i class="fa-brands fa-amazon"></i> Buy on Amazon
+                    <i class="fa-brands fa-amazon"></i>&nbsp;Buy on Amazon
                 </a>
                 <a href="https://www.audible.com/pd/The-Hobbit-Audiobook/B0099SNV7U" class="audiobook" target="_blank"
                     rel="noopener noreferrer">
-                    <i class="fa-solid fa-headphones"></i> Listen on Audible
-                </a>
-                <a href="https://x.com/tolkien" class="x" target="_blank" rel="noopener noreferrer">
-                    <i class="fa-brands fa-x-twitter"></i> Follow on X
+                    <i class="fa-solid fa-headphones"></i>&nbsp;Listen on Audible
                 </a>
             </div>
 
@@ -117,7 +136,7 @@
 
         <section class="book-details-section">
             <div class="book-details">
-                <h3 class="section-heading"><i class="fa-solid fa-book-open"></i> Overview</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-eye"></i>&nbsp;&nbsp;Overview</h3>
                 <p>This beloved classic introduces us to <strong>Bilbo Baggins</strong>, a comfort-loving hobbit whose
                     tranquil life in the Shire is abruptly interrupted by the arrival of the wizard
                     <strong>Gandalf</strong> and a company of thirteen dwarves, led by the formidable
@@ -129,14 +148,14 @@
                     cunning, and resourcefulness he never knew he possessed, fundamentally changing his outlook on life
                     and adventure.</p>
 
-                <h3 class="section-heading"><i class="fa-solid fa-users"></i> Main Characters</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-users"></i>&nbsp;&nbsp;Main Characters</h3>
                 <ul>
                     <li><strong>Bilbo Baggins</strong> – The unlikely hero and titular hobbit, <span
                             class="character-description">whose quiet life is turned upside down by the call to
                             adventure, leading to profound personal growth and unexpected bravery.</span></li>
                     <li><strong>Gandalf</strong> – The wise and mysterious wizard, <span class="character-description">who
                             orchestrates the quest and serves as a crucial guide and mentor, pushing Bilbo and the
-                             dwarves towards their destiny.</span></li>
+                            dwarves towards their destiny.</span></li>
                     <li><strong>Thorin Oakenshield</strong> – The proud and determined leader of the company of dwarves,
                         <span class="character-description">driven by a deep desire to reclaim his ancestral home and
                             immense treasure, struggling with the burden of his heritage.</span></li>
@@ -151,7 +170,7 @@
                             plays a crucial, unforeseen role in Bilbo's fate and the future of Middle-earth.</span></li>
                 </ul>
 
-                <h3 class="section-heading"><i class="fa-solid fa-lightbulb"></i> Prominent Themes</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-lightbulb"></i>&nbsp;&nbsp;Prominent Themes</h3>
                 <ul>
                     <li><strong>Adventure & Growth:</strong> <span class="theme-description">Bilbo’s transformative
                             journey from a comfort-loving, unassuming hobbit to a resourceful and brave individual,
@@ -175,7 +194,7 @@
                             unexpected and seemingly ordinary individuals, like Bilbo.</span></li>
                 </ul>
 
-                <h3 class="section-heading"><i class="fa-solid fa-file-lines"></i> Plot Summary</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-file-lines"></i>&nbsp;&nbsp;Plot Summary</h3>
                 <p>Bilbo's uneventful life is shattered when Gandalf and thirteen dwarves, led by Thorin Oakenshield,
                     arrive at his doorstep, inviting him to join a perilous quest. Their goal: to reclaim the dwarves'
                     ancestral home in the Lonely Mountain, guarded by the fearsome dragon Smaug. Reluctantly, Bilbo
@@ -189,7 +208,7 @@
                     courage, ultimately playing a crucial role in the adventure’s success and returning home a vastly
                     changed hobbit.</p>
 
-                <h3 class="section-heading"><i class="fa-solid fa-user-pen"></i> About the Author</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-user-pen"></i>&nbsp;&nbsp;About the Author</h3>
                 <p><strong>John Ronald Reuel Tolkien</strong> (1892–1973) was an English writer, poet, philologist, and
                     academic, widely regarded as the "father of modern fantasy literature." As a Professor of Anglo-Saxon
                     at Oxford University and later Professor of English Language and Literature, Tolkien's deep scholarly
@@ -201,7 +220,7 @@
                     adaptations worldwide. Tolkien's works are celebrated for their intricate detail, epic scope, and
                     timeless appeal.</p>
 
-                <h3 class="section-heading"><i class="fa-solid fa-magnifying-glass"></i> In-depth Review</h3>
+                <h3 class="section-heading"><i class="fa-solid fa-magnifying-glass"></i>&nbsp;&nbsp;In-depth Review</h3>
                 <p>J.R.R. Tolkien's 'The Hobbit' stands as a foundational pillar of modern fantasy literature, a charming
                     and deceptively simple tale that introduces readers to the richly imagined world of Middle-earth.
                     First published in 1937, it was originally conceived as a children's story, yet its depth of
@@ -263,18 +282,94 @@
                     'The Lord of the Rings' is significant, but 'The Hobbit' stands strong on its own as a complete and
                     enchanting adventure, making it a must-read for fantasy fans and a wonderful introduction to
                     Tolkien’s unparalleled world.</p>
+
             </div>
+        </section>
+
+        <section class="review-form-section">
+            <h2><i class="fa-solid fa-feather-pointed"></i>&nbsp;&nbsp;Review This Book</h2>
+
+            <iframe name="googleFormTarget" id="googleFormTarget" style="display: none;"></iframe>
+
+            <form
+                action="https://docs.google.com/forms/d/e/1FAIpQLSeIVRv3qb2mbOE5YX7_02iw3adIitxkycj-d-CN3EzTXu4Y7g/formResponse"
+                method="POST" class="review-form" target="googleFormTarget">
+
+                <div class="form-group" style="display: none;">
+                    <label for="bookTitle">Book Title:</label>
+                    <input type="text" id="bookTitle" name="entry.1905589179"
+                        value="The Hobbit" readonly>
+                </div>
+
+                <div class="form-group" style="display: none;">
+                    <label for="authorName">Author Name:</label>
+                    <input type="text" id="authorName" name="entry.2022925790" value="J.R.R. Tolkien" readonly>
+                </div>
+
+                <div class="form-group" style="display: none;">
+                    <label for="bookGenre">Book Genre:</label>
+                    <select id="bookGenre" name="entry.388336184" readonly>
+                        <option value="Fantasy" selected>Fantasy</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="yourName">Your Name (or Nickname):</label>
+                    <input type="text" id="yourName" name="entry.790753252" placeholder="e.g., Bookworm123" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="yourEmail">Your Email (used for verification only):</label>
+                    <input type="email" id="yourEmail" name="entry.1477771467" placeholder="e.g., booklover@example.com"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="starRating">Your Rating:</label>
+                    <div class="star-rating-input">
+                        <input type="radio" id="star5" name="entry.692186250" value="5" required><label for="star5"
+                            title="5 stars"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star4" name="entry.692186250" value="4"><label for="star4"
+                            title="4 stars"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star3" name="entry.692186250" value="3"><label for="star3"
+                            title="3 stars"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star2" name="entry.692186250" value="2"><label for="star2"
+                            title="2 stars"><i class="fa-solid fa-star"></i></label>
+                        <input type="radio" id="star1" name="entry.692186250" value="1"><label for="star1"
+                            title="1 star"><i class="fa-solid fa-star"></i></label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="reviewText">Your Review:</label>
+                    <textarea id="reviewText" name="entry.1480429930" rows="6"
+                        placeholder="Share your detailed thoughts on this book here..." required></textarea>
+                </div>
+
+                <div class="rel-button-container" style="margin:0;">
+                    <button type="submit" class="submit-button"><i
+                            class="fa-solid fa-arrow-up-from-bracket"></i>&nbsp;&nbsp;Submit</button>
+                    <button type="reset" class="reset-button"><i
+                            class="fa-solid fa-arrow-rotate-right"></i>&nbsp;&nbsp;Reset</button>
+                </div>
+
+            </form>
         </section>
     </main>
 
     <footer>
         <section class="join">
-            <h2><i class="fa-solid fa-pencil"></i> Join Our Community</h2>
+            <h2><i class="fa fa-comments"></i>&nbsp;&nbsp;Join Our Community</h2>
+            <img src="../assets/images/review.png" alt="reviewing books" />
+            <p><strong>Love Books? </strong>Join our community of book lovers!</p>
             <p>Start reviewing books and sharing your thoughts today!</p>
-            <a href="../review.html"><button>Get Started</button></a>
+            <a href="/review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Get
+                    Started</button></a>
         </section>
-        <p>&copy; 2025 Book Review</p>
+
+        <pre>&copy; 2025 Looking Glass Reviews</pre>
     </footer>
+
 </body>
 
 </html>
