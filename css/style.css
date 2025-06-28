@@ -450,13 +450,13 @@ footer {
   background-color: #333333;
 }
 
-.rel-button-container .audiobook {
+.rel-button-container .audible {
   background-color: #e05423;
   color: #ffffff;
   border: none;
 }
 
-.rel-button-container .audiobook:hover {
+.rel-button-container .audible:hover {
   background-color: #c74a1f;
 }
 
@@ -467,6 +467,24 @@ footer {
 }
 .rel-button-container .youtube:hover {
   background-color: #cc0000;
+}
+
+.rel-button-container .wikipedia {
+  background-color: white;
+  color: #000000;
+  border: none;
+}
+.rel-button-container .wikipedia:hover {
+  background-color: #f0f0f0;
+}
+
+.rel-button-container .read-link {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+}
+.rel-button-container .read-link:hover {
+  background-color: #3a7bbf;
 }
 .star-rating {
   color: #ffc107;
