@@ -450,6 +450,27 @@ footer {
   background-color: #333333;
 }
 
+.rel-button-container .instagram {
+  background: linear-gradient(
+    45deg,
+    #f09433,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+  color: #ffffff;
+  border: none;
+}
+.rel-button-container .instagram:hover {
+  background: linear-gradient(
+    45deg,
+    #e6683c,
+    #dc2743,
+    #cc2366,
+    #bc1888
+  );
+}
 .rel-button-container .audible {
   background-color: #e05423;
   color: #ffffff;
