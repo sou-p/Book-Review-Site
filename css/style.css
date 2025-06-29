@@ -463,13 +463,7 @@ footer {
   border: none;
 }
 .rel-button-container .instagram:hover {
-  background: linear-gradient(
-    45deg,
-    #e6683c,
-    #dc2743,
-    #cc2366,
-    #bc1888
-  );
+  background: linear-gradient(45deg, #e6683c, #dc2743, #cc2366, #bc1888);
 }
 .rel-button-container .audible {
   background-color: #e05423;
@@ -559,6 +553,33 @@ blockquote .star-rating {
   resize: vertical;
   min-height: 100px;
   max-width: 100%;
+}
+
+.review-form select {
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2224%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M7%2010L12%2015L17%2010H7Z%22%20fill%3D%22%23555555%22%2F%3E%0A%3C%2Fsvg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 16px;
+  width: 100%;
+  padding: clamp(10px, 2vw, 15px);
+  padding-right: 40px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1em;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review-form select:focus {
+  border-color: #4a90e2;
+  box-shadow: 0 0 0 3px rgba(74, 144, 226, 0.2);
+  outline: none;
+}
+
+.review-form select:hover {
+  border-color: #a0a0a0;
+  background-color: #f0f7ff;
 }
 
 .star-rating-input {

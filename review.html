@@ -5,45 +5,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Book Review - Submit Review</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/fav.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
   <header>
-    <h1>Submit Your Review</h1>
+    <img src="assets/images/logo-trans.png" alt="Book Review Logo" class="logo" />
+    <div class="banner"><img src="assets/images/banner-1.png" alt="Banner 1"><img src="assets/images/banner-2.png"
+        alt="Banner 2"></div>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html">Books</a>
-      <a href="login.html">Login</a>
-      <a href="review.html">Submit Review</a>
+      <a href="index.html"><i class="fa fa-home"></i>&nbsp;&nbsp;Home</a>
+      <a href="books.html"><i class="fa fa-book"></i>&nbsp;&nbsp;Books</a>
+      <a href="about.html"><i class="fa fa-info-circle"></i>&nbsp;&nbsp;About Us</a>
+      <a href="review.html"><i class="fa fa-pencil-alt"></i>&nbsp;&nbsp;Submit Review</a>
     </nav>
   </header>
 
   <main>
-    <form id="review-form">
-      <label for="book-title">Book Title:</label><br />
-      <input type="text" id="book-title" name="book-title" required /><br />
+    <section class="review-form-section">
+      <h2><i class="fa-solid fa-feather-pointed"></i>&nbsp;&nbsp;Submit Your Book Review</h2>
+      <iframe name="googleFormTarget" id="googleFormTarget" style="display: none;"></iframe>
 
-      <label for="review-text">Review:</label><br />
-      <textarea id="review-text" name="review-text" rows="5" required></textarea><br />
+      <form
+        action="https://docs.google.com/forms/d/e/1FAIpQLSeIVRv3qb2mbOE5YX7_02iw3adIitxkycj-d-CN3EzTXu4Y7g/formResponse"
+        method="POST" class="review-form" target="googleFormTarget">
 
-      <label for="rating">Rating:</label><br />
-      <select id="rating" name="rating" required>
-        <option value="">Select rating</option>
-        <option value="5">5 - Excellent</option>
-        <option value="4">4 - Good</option>
-        <option value="3">3 - Average</option>
-        <option value="2">2 - Poor</option>
-        <option value="1">1 - Terrible</option>
-      </select><br />
+        <div class="form-group">
+          <label for="bookTitle">Book Title:</label>
+          <input type="text" id="bookTitle" name="entry.1905589179" required>
+        </div>
 
-      <button type="submit">Submit Review</button>
-    </form>
+        <div class="form-group">
+          <label for="authorName">Author Name:</label>
+          <input type="text" id="authorName" name="entry.2022925790" required>
+        </div>
+
+        <div class="form-group">
+          <label for="bookGenre">Book Genre:</label>
+          <select id="bookGenre" name="entry.388336184" required>
+            <option value="" disabled selected hidden>Select Genre</option>
+            <option value="Fiction">Fiction</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Fantasy">Fantasy</option>
+            <option value="Non-Fiction">Non-Fiction</option>
+            <option value="Romance">Romance</option>
+            <option value="Science Fiction">Science Fiction</option>
+
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="yourName">Your Name (or Nickname):</label>
+          <input type="text" id="yourName" name="entry.790753252" placeholder="e.g., Bookworm123" required>
+        </div>
+
+        <div class="form-group">
+          <label for="yourEmail">Your Email (used for verification only):</label>
+          <input type="email" id="yourEmail" name="entry.1477771467" placeholder="e.g., booklover@example.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="starRating">Your Rating:</label>
+          <div class="star-rating-input">
+            <input type="radio" id="star5" name="entry.692186250" value="5" required><label for="star5"
+              title="5 stars"><i class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star4" name="entry.692186250" value="4"><label for="star4" title="4 stars"><i
+                class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star3" name="entry.692186250" value="3"><label for="star3" title="3 stars"><i
+                class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star2" name="entry.692186250" value="2"><label for="star2" title="2 stars"><i
+                class="fa-solid fa-star"></i></label>
+            <input type="radio" id="star1" name="entry.692186250" value="1"><label for="star1" title="1 star"><i
+                class="fa-solid fa-star"></i></label>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="reviewText">Your Review:</label>
+          <textarea id="reviewText" name="entry.1480429930" rows="6"
+            placeholder="Share your detailed thoughts on this book here..." required></textarea>
+        </div>
+
+        <div class="rel-button-container" style="margin:0;">
+          <button type="submit" class="submit-button"><i
+              class="fa-solid fa-arrow-up-from-bracket"></i>&nbsp;&nbsp;Submit</button>
+          <button type="reset" class="reset-button"><i
+              class="fa-solid fa-arrow-rotate-right"></i>&nbsp;&nbsp;Reset</button>
+        </div>
+
+      </form>
+    </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Book Review</p>
-  </footer>
-</body>
+ <footer>
+        <section class="join">
+            <h2><i class="fa-solid fa-handshake"></i>&nbsp;&nbsp;Reach Out</h2>
+             <img src="assets/images/suggest.png" alt="Suggest">
+            <p>Have a book you want to see reviewed?</p>
+            <p><strong>Got a suggestion?</strong> maybe a question? Don't hesitate to reach out!</p>
+            <p><a href="mailto:suggestions@bookreview.com"><button><i class="fa-solid fa-at"></i>&nbsp;&nbsp;Email us</button></a> </p>
+        </section>
+        <pre>&copy; 2025 Looking Glass Reviews</pre>
+    </footer>
 
 </html>
