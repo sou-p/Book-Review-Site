@@ -29,11 +29,14 @@
     </header>
 
     <main>
-        <section class="search-bar">
-            <input type="text" id="search" placeholder="Search for books..." />
-            <button><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>
+        <section class="search">
+            <form action="https://www.google.com/cse" method="GET" class="search-bar">
+                <input type="hidden" name="cx" value="e3f0efaa4d45b44b4" />
+                <input type="hidden" name="ie" value="UTF-8" />
+                <input type="text" id="search" name="q" placeholder="Search for books..."  />
+                <button type="submit"><i class="fa fa-search"></i>&nbsp;&nbsp;Search</button>
+            </form>
         </section>
-
         <section class="genres">
             <h2><i class="fa fa-book-open"></i>&nbsp;&nbsp;Browse by Genre</h2>
             <div class="genre-buttons">
@@ -209,7 +212,7 @@
             <img src="assets/images/review.png" alt="reviewing books" />
             <p><strong>Love Books? </strong>Join our community of book lovers!</p>
             <p>Start reviewing books and sharing your thoughts today!</p>
-            <a href="/review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Get
+            <a href="review.html"><button><i class="fa-solid fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Get
                     Started</button></a>
         </section>
 
